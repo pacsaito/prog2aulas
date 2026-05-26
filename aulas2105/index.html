@@ -10,12 +10,13 @@
     <h1>Introdução a formulários</h1>
     <div class="conteudo-formulario">
 
-        <form>
+        <form action="">
             <label for="pNome" > Nome: </label> 
             <input type="text" name="nome" id="pNome" placeholder="Digite seu nome:"> <br>
 
             <label for="sobreNome"> Sobrenome: </label> 
             <input type="text" name="sobrenome" id="sobreNome" placeholder="Digite seu sobrenome:">
+
 
             <h3>Selecione seu curso:</h3>
 
@@ -31,14 +32,40 @@
             <input type="radio" name="curso" id="tadm">
             <label for="tadm" >Técnico em administração</label>
 
+
             <h3>Dados da plataforma:</h3>
             <label for="endEmail"> Email: </label>
             <input type="email" id="endEmail">
 
             <label for="senha">Defina uma senha: </label>
-            <input type="password" id="senha">
+            <input type="password" id="senha" required>
 
 
+            <div class="conteudo-disciplina">
+                <h3>Escolha as disciplinas favoritas</h3>
+                <input type="checkbox" id="port">
+                <label for="port">Português</label>
+
+                <input type="checkbox" id="mat">
+                <label for="mat">Matemática</label>
+
+                <input type="checkbox" id="lp2">
+                <label for="lp2">Lab. Programação II</label>
+            </div>
+
+
+            <div class="conteudo-ano">
+                <h3>Escolha o ano cursado</h3>
+                <select id="ano-cursado">
+                    <option value="pri">1º Ano</option>
+                    <option value="seg">2º Ano</option>
+                    <option value="ter">3º Ano</option>
+                </select>
+            </div>
+            <p>Digite aqui a sua mensagem:</p>
+            <textarea rows="2" cols="60"></textarea>
+            <br>
+            <button onclick="alert('teste')">Enviar dados</button>
 
 
         </form>
